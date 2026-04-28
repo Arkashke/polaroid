@@ -1,0 +1,17 @@
+-dontwarn **
+-dontoptimize
+-dontpreverify
+-keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod
+-keep class net.minecraft.** { *; }
+-keep class com.mojang.** { *; }
+-keep class via.** { *; }
+-keep class org.** { *; }
+-keep class javax.** { *; }
+-keep class com.google.** { *; }
+-keep class net.optifine.** { *; }
+-keep class net.raphimc.** { *; }
+-keep class joptsimple.** { *; }
+-keep class net.minecraft.client.main.Main { public static void main(java.lang.String[]); }
+-keep class polaroid.client.Polaroid { *; }
+-keepclassmembers class * { @com.google.common.eventbus.Subscribe *; }
+-keepclassmembers class * { public static void main(java.lang.String[]); }
